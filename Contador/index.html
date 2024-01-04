@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_1_CursoEmVideo</title>
+    <link rel="stylesheet" href="/Contador/reset.css">
+
+    <style>
+        *{
+            font-family:'Segoe UI';
+            padding: 0;
+        }
+
+        body{
+             background-color: rgb(69, 134, 255);
+        }
+
+        main{
+           margin-top: 30vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+        }
+        .forms {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            width: 600px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 2px  5px 5px  rgb(80, 80, 80);
+            font-size: 0.8rem;
+        }
+
+        label{
+            margin: 15px 0;
+            font-size: 1.6rem;
+        }
+
+        h1{
+            margin-bottom: 30px;
+            font-size: 2.6rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        input{
+            padding: 5px;
+            width: 180px;
+        }
+        button{
+            font-size: 1.0rem;
+            width: 100px;
+            margin: 10px 0;
+        }
+
+        h3, p{
+            font-size: 0.8rem;
+        }
+
+        h3{
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Contador</h1>
+        <div class="forms">
+           
+            <label > Inicio:
+                <input id="inicio" type="number" placeholder="Digite o inicio do contador">
+            </label>
+
+            <label > Fim:
+                <input id="fim" type="number" placeholder="Digite o fim do contador">
+            </label>
+
+            <label > Passo:
+                <input id="passo" type="number" placeholder="Digite a quantidade de passos">
+            </label>
+            <div class="btn-btn">
+                <button onclick="contar()">Contar</button>
+                <button onclick="limparCampo()">Limpar</button>
+            </div>
+            <h3></h3>
+            <p></p>
+        </div>
+    </main>
+
+    <script src="/Contador/app.js"></script>
+</body>
+
+</html>
