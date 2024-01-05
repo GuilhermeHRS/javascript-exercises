@@ -5,6 +5,7 @@ let btnContar = document.querySelector("button");
 let titulo = document.querySelector("h3");
 let resultado = document.querySelector("p");
 
+
 function contar() {
   let inicio = Number(input_inicio.value);
   let fim = Number(input_fim.value);
