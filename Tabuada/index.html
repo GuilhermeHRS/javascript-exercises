@@ -37,6 +37,10 @@
             font-size: 0.8rem;
         }
 
+        #select{
+            height: 400px;
+        }
+
         label{
             margin: 15px 0;
             font-size: 1.6rem;
@@ -44,57 +48,45 @@
 
         h1{
             margin-bottom: 30px;
-            font-size: 2.6rem;
+            font-size: 2.8rem;
             color: #ffffff;
             font-weight: 500;
+            text-transform: uppercase;
         }
 
         input{
             padding: 5px;
             width: 180px;
+            color: black;
         }
         button{
             font-size: 1.0rem;
-            width: 100px;
-            margin: 10px 0;
+            padding: 3px;
         }
 
-        h3, p{
-            font-size: 0.8rem;
-        }
-
-        h3{
-            font-weight: 600;
+        select{
+            font-size: 1.2rem;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <h1>Contador</h1>
+        <h1>Tabuada</h1>
         <div class="forms">
            
-            <label > Inicio:
-                <input id="inicio" type="number" placeholder="Digite o inicio do contador">
+            <label > Número:
+                <input id="campo-numero" type="number" placeholder="Digite um número...">
+                <button id="btn-gerar-tabuada" onclick="gerarTabuada()">Gerar tabuada</button>
             </label>
-
-            <label > Fim:
-                <input id="fim" type="number" placeholder="Digite o fim do contador">
-            </label>
-
-            <label > Passo:
-                <input id="passo" type="number" placeholder="Digite a quantidade de passos">
-            </label>
-            <div class="btn-btn">
-                <button onclick="contar()">Contar</button>
-                <button onclick="limparCampo()">Limpar</button>
+                
+                <select name="" id="select" size="10"></select> 
             </div>
-            <h3></h3>
-            <p></p>
+
         </div>
     </main>
 
-    <script src="/Contador/app.js"></script>
+    <script src="/Tabuada/app.js"></script>
 </body>
 
 </html>
